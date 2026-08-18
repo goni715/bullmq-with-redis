@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch ./src/index.ts",
+    "worker": "tsx ./src/workers/email.worker.ts",
     "start": "nodemon ./dist/index.js",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
@@ -17,7 +18,8 @@
     "@typescript-eslint/eslint-plugin": "^8.60.1",
     "@typescript-eslint/parser": "^8.60.1",
     "bullmq": "^6.1.2",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "ioredis": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
