@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch ./src/index.ts",
-    "worker": "tsx ./src/workers/email.worker.ts",
+    "producer": "tsx ./src/producer.ts",
+    "worker": "tsx ./src/worker.ts",
     "start": "nodemon ./dist/index.js",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
