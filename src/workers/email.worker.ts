@@ -1,10 +1,13 @@
 import { Worker } from "bullmq";
 import { connection } from "@/config/redis";
+import sendEmail from "@/utils/sendEmail";
 
 const worker = new Worker(
   "email",
   async (job) => {
-    console.log(job.data);
+    const { email } = job.data;
+    console.log(`Sending email to ${email}`);
+    await sendEmail(email);
   },
   { connection },
 );

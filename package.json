@@ -20,11 +20,13 @@
     "@typescript-eslint/parser": "^8.60.1",
     "bullmq": "^6.1.2",
     "dotenv": "^17.4.2",
-    "ioredis": "^6.0.0"
+    "ioredis": "^6.0.0",
+    "nodemailer": "^9.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^25.9.1",
+    "@types/nodemailer": "^8.0.1",
     "eslint": "^10.4.1",
     "globals": "^17.6.0",
     "nodemon": "^3.1.14",

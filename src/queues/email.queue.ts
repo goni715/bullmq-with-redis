@@ -6,8 +6,8 @@ const addEmailJob = async () => {
   await emailQueue.add("send-email", { email: "gonidev715@gmail.com" });
   await emailQueue.add(
     "send-email",
-    { email: "lerofam787@archifun.com" },
-    { delay: 10_000 },
+    { email: "goniosman715149123@gmail.com" },
+    { delay: 60_000 }, //60 seconds
   );
 };
 
