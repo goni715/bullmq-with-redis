@@ -1,12 +1,10 @@
 import { Worker } from "bullmq";
-import IORedis from "ioredis";
-
-const connection = new IORedis({ maxRetriesPerRequest: null });
+import { connection } from "@/config/redis";
 
 const worker = new Worker(
-  "foo",
+  "email",
   async (job) => {
-    console.log("Job processing:", job.data);
+    console.log(job.data);
   },
   { connection },
 );
